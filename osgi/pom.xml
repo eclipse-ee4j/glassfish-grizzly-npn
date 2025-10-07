@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
+    Copyright (c) 2025 Contributors to the Eclipse Foundation.
     Copyright (c) 2017, 2018 Oracle and/or its affiliates. All rights reserved.
 
     This program and the accompanying materials are made available under the
@@ -32,7 +33,6 @@
         to be available via the OSGi classloading mechanisms.
 
         Using GlassFish as an example:
-          - grizzly-npn-bootstrap.jar goes into the domain's bootclasspath (-Xbootclasspath/p:[PATH TO THE JAR])
           - grizzly-npn-osgi and grizzly-spdy JARs go into the $GF_HOME/modules directory.
     </description>
 

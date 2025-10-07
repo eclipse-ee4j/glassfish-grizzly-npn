@@ -1,3 +1,4 @@
+[//]: # " Copyright (c) 2025 Contributors to the Eclipse Foundation. "
 [//]: # " Copyright (c) 2017 Oracle and/or its affiliates. All rights reserved. "
 [//]: # "  "
 [//]: # " This program and the accompanying materials are made available under the "
@@ -12,9 +13,9 @@
 [//]: # "  "
 [//]: # " SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0 "
 
-This module interfaces with the TLS implementation of Oracle JDK8 to
+This module interfaces with the TLS implementation of JDK8u252+ to
 provide an implementation of ALPN.  The module was written for use in
-Grizzly, but is intended as a general purpose solution to allow JDK8
+Grizzly, but is intended as a general purpose solution to allow JDK8u252+
 based software to use ALPN.
 
 # How Grizzly Uses This Module
@@ -78,10 +79,3 @@ current connection is secure (that is, it is supposed to be using ALPN).
     By the time `onStart` is invoked, the handshake listener will have
     been initialized with implementations of `AlpnClientNegotiator` and
     `AlpnServerNegotiator` by the `Http2AddOn`.
-
-## Deployment Configuration
-
-The above programmatic configuration steps will make it so the simple
-act of including the module built from the `bootstrap` sub-module of
-this repository in the bootclasspath of the JVM will enable ALPN support
-in that JVM.
